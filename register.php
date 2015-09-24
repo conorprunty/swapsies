@@ -171,8 +171,7 @@
             <form action="register.php" method="post">
                 <p>Username:</p><input name="username" type="text" value="">
 
-                <p>Password:</p><input name="password" type="password" value=
-                "">
+                <p>Password:</p><input name="password" type="password" value="">
                 
                 <p>E-Mail:</p><input name="email" type="text" value="">
                 <br>
