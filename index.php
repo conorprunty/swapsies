@@ -71,11 +71,8 @@
         
         if($login_ok) 
         { 
-            // Here I am preparing to store the $row array into the $_SESSION by 
-            // removing the salt and password values from it.  Although $_SESSION is
-            // stored on the server-side, there is no reason to store sensitive values 
-            // in it unless you have to.  Thus, it is best practice to remove these 
-            // sensitive values first. 
+            // $_SESSION is stored on the server-side, there is no reason to store 
+            // sensitive values in it unless you have to. Here I remove these.
             unset($row['salt']); 
             unset($row['password']); 
              
@@ -110,19 +107,19 @@
 </head>
 
 <body>
-    <div>
-        <div>
+    <div align='center'>
             <form action="index.php" method="post">
                 <h4>Login</h4><input name="username" type="text" value=
                 "<?php echo $submitted_username; ?>">
 
                 <h4>Password</h4><input name="password" type="password"><br><br>
-				<a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
-
+                
                 <p><input class="button" type="submit" value="Submit"></p>
+                
+				<a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
+                <br><br>
                 <a class="button" href="register.php">Register</a>
             </form>
-        </div>
     </div>
 </body>
 </html>

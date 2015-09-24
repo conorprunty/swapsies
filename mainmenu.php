@@ -1,10 +1,6 @@
 <?php
 /*
 * mainmenu.php *
-* Rev 1 *
-* 18/04/2015 *
-*
-* @author Eoin Sutton, Conor Prunty, David Byrne, Ciaran Byrne, Kevin Clarke *
 */ 
     // connect to DB
     require("common.php"); 
@@ -26,7 +22,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <title>Swapsies</title>
 </head>
@@ -34,8 +30,11 @@
 <body>
 
     <div align='center'> 
-        <img src="../swapsies/images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
+        <img src="../images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
         <p> This is our slogan</p>
+    
+    <a href="logout.php">Logout</a>
+        
     </div>
     
     

@@ -166,7 +166,6 @@
 
 <body>
     <div align='center'>
-        <div>
             <h1>Register</h1>
 
             <form action="register.php" method="post">
@@ -177,9 +176,9 @@
                 
                 <p>E-Mail:</p><input name="email" type="text" value="">
                 <br>
+                <br>
                 <input class="button" type="submit" value="Register">
             </form>
-        </div>
     </div>
 </body>
 </html>
