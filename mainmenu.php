@@ -32,6 +32,15 @@
     <div align='center'> 
         <img src="../images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
         <p> This is our slogan</p>
+        
+        <a href="insert.php">Submit ad</a>
+        <br>
+        <br>
+        
+        <a href="adverts.php">view ads</a>
+        <br>
+        <br>
+        
     
     <a href="logout.php">Logout</a>
         

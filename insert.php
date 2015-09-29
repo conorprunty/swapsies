@@ -38,6 +38,30 @@
             <br>
             Comment<br>
             <input type="text" name="comments" value="">
+            <br>
+            Location:<br>
+            <select name='location'>
+                <option value="leinster">Leinster</option>
+                <option value="munster">Munster</option>
+                <option value="connacht">Connacht</option>
+                <option value="ulster">Ulster</option>
+            </select>
+            <br>
+            Category:<br>
+            <select name='category'>
+                <option value="cars">Cars</option>
+                <option value="music">Music</option>
+                <option value="goods">Goods</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            Price:<br>
+            <select name='price'>
+                <option value="0-19">$0 - $19.99</option>
+                <option value="20-39">$20 - $39.99</option>
+                <option value="40-59">$40 - $59.99</option>
+                <option value="60+">$60+</option>
+            </select>
             <br><br>
             <input type="submit" value="Submit">
         </fieldset>
