@@ -1,7 +1,3 @@
-function hideMainTable(){
-    $(".allAds").hide();
-}
-
-function test() {
-    alert("Page is loaded");
+function alertTest() {
+    alert("Hello! I am an alert box!");
 }

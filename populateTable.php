@@ -15,17 +15,17 @@
         // this statement is needed 
         die("Redirecting to index.php"); 
     } 
-    else
+else
     {
      
+        $location = $_POST['locationSelect'];
+        //$location = mysql_real_escape_string($location);
+    
        $query = " 
             SELECT 
-                name,
-                comments,
-                location,
-                category,
-                price
+                *
             FROM advert
+            WHERE location='$location'
             ORDER BY entryNo DESC;
         "; 
          
@@ -43,7 +43,10 @@
         } 
             
     } 
+    
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -53,38 +56,23 @@
     <script src="main.js"></script>
     
 
-    <title>Adverts</title>
+    <title>Test Page</title>
 </head>
 
 <body>
     
-    <div>
-        <h2> Location </h2>
-        <form action="searchTable.php">
-                <select>
-                    <option><i>select...</i></option>
-                      <option value="leinster">Leinster</option>
-                      <option value="ulster">Ulster</option>
-                      <option value="munster">Munster</option>
-                      <option value="connacht">Connacht</option>
-                </select><br><br>
-            <button> Submit </button>
-        </form>
-        
-    
-    </div>
-    
-    
-    <div id='allAds' align='center'>
 
-  
-                <br>
 
-                <h1>Adverts</h1><br>
-        
-        
-                <br>
-                <?php 
+
+
+
+
+
+
+    
+
+    
+<?php 
                             if($row)
                             {
                                 echo "<table><tr><th>Name</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
@@ -103,6 +91,6 @@
                         
                         ?>
 
-    </div>
+
 </body>
 </html>
