@@ -17,14 +17,14 @@ $sql = "INSERT INTO advert (name, comments, location, category, price)
 VALUES ('$_POST[name]', '$_POST[comments]', '$_POST[location]', '$_POST[category]', '$_POST[price]')";
 
 if ($conn->query($sql) === TRUE) {
-        $message = "Ad successfully submitted!";
-echo "<script type='text/javascript'>alert('$message');</script>";
+        //$message = "Ad successfully submitted!";
+        //echo "<script type='text/javascript'>alert('$message');</script>";
     
-    header("Location: insert.php"); 
+        header("Location: adverts.php"); 
     
          
         // this statement is needed 
-        die("Redirecting to insert.php"); 
+        die("Redirecting to adverts.php"); 
     
 
     
@@ -36,3 +36,4 @@ echo "<script type='text/javascript'>alert('$message');</script>";
 
 $conn->close();
 ?>
+

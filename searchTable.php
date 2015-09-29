@@ -18,7 +18,7 @@
     else
     {
      //get score from DB for leaderboard
-       $query = " 
+        $query = " 
             SELECT 
                 name,
                 comments,
@@ -50,7 +50,7 @@
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="main.js"></script>
+    <script src="main.js" type="text/javascript"></script>
     
 
     <title>Adverts</title>
@@ -61,7 +61,7 @@
     <div>
         <h2> Location </h2>
         <form action="searchTable.php">
-                <select>
+                <select name='locationOption'>
                     <option><i>select...</i></option>
                       <option value="leinster">Leinster</option>
                       <option value="ulster">Ulster</option>
@@ -84,24 +84,7 @@
         
         
                 <br>
-                <?php 
-                            if($row)
-                            {
-                                echo "<table><tr><th>Name</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
-                                $count = 1;
-                                // output data of first row
-                                echo "<tr><td>" . $row["name"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
-                                // output data of next rows
-                                while($row = $stmt->fetch()) {
-                                    $count++;
-                                    echo "<tr><td>" . $row["name"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
-                                }
-                                echo "</table>";
-                            } else {
-                                echo "0 results";
-                            }
-                        
-                        ?>
+                
 
     </div>
 </body>

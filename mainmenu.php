@@ -28,7 +28,7 @@
 </head>
 
 <body>
-
+    
     <div align='center'> 
         <img src="../images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
         <p> This is our slogan</p>
