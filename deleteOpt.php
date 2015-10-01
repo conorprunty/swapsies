@@ -13,9 +13,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-
-$sql = "INSERT INTO advert (name, comments, location, category, price)
-VALUES ('$_POST[name]', '$_POST[comments]', '$_POST[location]', '$_POST[category]', '$_POST[price]')";
+$opt = $_POST['deleteOption'];
+$sql = "DELETE FROM advert WHERE entryNO = '$opt'";
 
 if ($conn->query($sql) === TRUE) {
         //$message = "Ad successfully submitted!";

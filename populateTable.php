@@ -78,16 +78,7 @@ else
 </head>
 
 <body>
-    
 
-
-
-
-
-
-
-
-    
 
     
 <?php 
