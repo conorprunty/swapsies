@@ -37,7 +37,7 @@
         <br>
         <br>
         
-        <a href="adverts.php">view ads</a>
+        <a href="searchTable.php">view ads</a>
         <br>
         <br>
         

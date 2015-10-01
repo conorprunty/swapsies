@@ -15,7 +15,7 @@
         die("Redirecting to index.php"); 
     }    
 
-$name = $_SESSION['user'];
+$name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
     
 ?>
 
@@ -34,25 +34,8 @@ $name = $_SESSION['user'];
     <div align='center'> 
         <form action="submitForm.php" method="post">
             Name:<br>
-            <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>
-            
-            
-            <!--<select name='name'>
-                <option value="name"></option>
-            </select>-->
-            
-            
-            
-            
-            <!--<textarea readonly name="name"><?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?></textarea>-->
-            
-            
-            <!--<input type="text" name="name" value="">-->
-            
-            
-            <!--<?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>-->
-            
-            
+            <?php echo (htmlentities($_SESSION['user']['username'])); ?>
+            <input type="hidden" name="name" value="<?php echo $name?>"/>
             <br>
             Comment<br>
             <input type="text" name="comments" value="">
