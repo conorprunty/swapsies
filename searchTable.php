@@ -34,11 +34,22 @@
 <form method="post" action="populateTable.php">
                 Search by location:<br>
             <select name='locationSelect'>
+                <option value="" selected>Select All</option>
                 <option value="leinster">Leinster</option>
                 <option value="ulster">Ulster</option>
                 <option value="connacht">Connacht</option>
                 <option value="munster">Munster</option>
             </select>
+            <br>
+            <p>Search by category</p>
+            <select name='categorySelect'>
+                <option value="" selected>Select All</option>
+                <option value="cars">Cars</option>
+                <option value="music">Music</option>
+                <option value="goods">Goods</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
             <button> Submit </button>
         </form>
     

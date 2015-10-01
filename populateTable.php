@@ -18,14 +18,32 @@
 else
     {
      
+    if($_POST['locationSelect'] != "")
+    {
         $location = $_POST['locationSelect'];
+    }
+    else
+    {
+        $location = "SELECT location FROM advert WHERE location = '*'";
+    }
+    
+    if($_POST['categorySelect'] != "")
+    {
+        $category = $_POST['categorySelect'];
+    }
+    else
+    {
+        $category = "SELECT category FROM advert WHERE category = '*'";
+    }
+        //$location = $_POST['locationSelect'];
         //$location = mysql_real_escape_string($location);
     
        $query = " 
             SELECT 
-                *
+                name, comments, location, category, price
             FROM advert
             WHERE location='$location'
+            AND category='$category'
             ORDER BY entryNo DESC;
         "; 
          
