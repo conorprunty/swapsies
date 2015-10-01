@@ -12,3 +12,30 @@ table, th, td {
     border: 1px solid black;
     max-width: 550px;
 }
+
+
+
+
+.panel-default > .panel-body {
+ background-color:bisque;
+}
+
+
+
+
+body {
+   background:grey !important;
+}
+
+form {
+    
+    
+ font-family:arial;
+    color: black;
+}
+
+h1 {
+    
+ text-align: center;
+    text-color: red;
+}
