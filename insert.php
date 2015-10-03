@@ -38,7 +38,7 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
             <input type="hidden" name="name" value="<?php echo $name?>"/>
             <br>
             Comment<br>
-            <input type="text" name="comments" value="">
+            <input type="text" name="comments" placeholder="Enter your ad here...">
             <br>
             Location:<br>
             <select name='location'>

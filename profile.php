@@ -16,7 +16,7 @@
     }    
 
 $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
-$allOptions = "SELECT entryNo FROM advert WHERE name = '$name'";
+$optOne = "SELECT entryNO FROM advert WHERE entryNo='2'";
 
 $allOpt = "SELECT entryNo FROM advert WHERE name = '$name'";
 $results = mysql_query($allOpt);
@@ -24,9 +24,8 @@ $results = mysql_query($allOpt);
 $stmt1 = $db->prepare($allOpt); 
                 $results = $stmt1->execute($query_params); 
                 $row1 = $stmt1->fetch();
-
-
-
+    
+            
 $query = " 
             SELECT 
                 entryNo, comments, location, category, price
@@ -51,7 +50,6 @@ $query = "
 
     
 ?>
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -60,50 +58,50 @@ $query = "
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <title>Profile</title>
-    
 </head>
 
 <body>
-    
     <p>Your ads</p>
 
-    
-        <form method="post" action="deleteOpt.php">
-                Delete ad:<br>
-            <select name="deleteOption"> 
-                    <?php while ($row1 = $stmt1->fetch()) { 
-                    ?> 
-                    <option value="<?php echo $row1['entryNo'];?>"> <?php echo $row1['entryNo'];?> </option>   
-                <?php 
-                }
-                ?> 
-            </select> 
-            <br>
-            <button> Submit </button>
-        </form>
-    
+    <?php 
 
-
-   <?php 
-
-                            if($row)
-                            {
-                                echo "<table><tr><th>Ad Number</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
-                                $count = 1;
-                                // output data of first row
-                                echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
-                                // output data of next rows
-                                while($row = $stmt->fetch()) {
-                                    $count++;
+                                if($row)
+                                {
+                                    echo "<table><tr><th>Ad Number</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+                                    $count = 1;
+                                    // output data of first row
                                     echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
+                                    // output data of next rows
+                                    while($row = $stmt->fetch()) {
+                                        $count++;
+                                        echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
+                                    }
+                                    echo "</table>";
+                                } else {
+                                    echo "0 results";
                                 }
-                                echo "</table>";
-                            } else {
-                                echo "0 results";
+                            
+                            ?>
+    
+    <h2> Have you any ads that you wish to delete?</h2>
+    <form action="deleteOpt.php" method="post">
+        Please select by the ad number:<br>
+        <select name="deleteOption">
+            <!-- Need this to get the first item -->
+
+            <option value="<?php echo $row1['entryNo'];?>">
+                <?php echo $row1['entryNo'];?>
+            </option><?php while ($row1 = $stmt1->fetch()) { 
+                                ?>
+            <!-- This gets all the rest of the rows in a loop -->
+
+            <option value="<?php echo $row1['entryNo'];?>">
+                <?php echo $row1['entryNo'];?>
+            </option><?php 
                             }
-                        
-                        ?> 
-    
-    
+                            ?>
+        </select><br>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
