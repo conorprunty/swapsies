@@ -151,6 +151,7 @@
         // redirect user 
         die("Redirecting to index.php"); 
     } 
+
      
 ?>
 <!DOCTYPE html>
