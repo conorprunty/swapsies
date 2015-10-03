@@ -152,7 +152,7 @@
                 
                         <a class="btn btn-info btn-block" href="register.php">Register</a> 
     
-    <a class="btn btn-info btn-block" href="adverts.php">View ads without logging in</a> </br></br>
+    <a class="btn btn-info btn-block" href="adverts.php">View ads as Guest</a> </br></br>
                         
                         <a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
             </form>
