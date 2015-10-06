@@ -14,17 +14,24 @@ table, th, td {
 }
 
 
+/* These CSS tags relate to the index page currently*/
 
+a {
+ color:white !important;   
+    align: center;
+}
 
 .panel-default > .panel-body {
- background-color:bisque;
+ background-color:#FFA300 !important;
+}
+
+.jumbotron {
+background-color:transparent!important;    
 }
 
 
-
-
 body {
-   background:grey !important;
+   background:#EBEBD6 !important;
 }
 
 form {
@@ -37,5 +44,11 @@ form {
 h1 {
     
  text-align: center;
-    text-color: red;
+  text-align: center;
+}
+
+h4 {
+    
+ color: white !important;
+    text-align: center;
 }
