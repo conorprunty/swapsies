@@ -84,14 +84,19 @@ else
 <?php 
                             if($row)
                             {
-                                echo "<table><tr><th>Name</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+                                echo "<table><tr><th>Name</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th><th>Contact</th></tr>";
                                 $count = 1;
                                 // output data of first row
-                                echo "<tr><td>" . $row["name"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
+                                echo "<tr><td>" . $row["name"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td>";echo "<td><form id= \"$FormName\" method=\"post\" action=\"contactCustomer.php\">
+<input name=\"hidden\" type=\"hidden\" value=\"name\">
+<input name=\"submit\" type=\"submit\" value=\"Contact Seller\">
+</form></td></tr>";
                                 // output data of next rows
                                 while($row = $stmt->fetch()) {
                                     $count++;
-                                    echo "<tr><td>" . $row["name"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
+                                    echo "<tr><td>" . $row["name"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td>";echo "<td><form id= \"$FormName\" method=\"post\" action=\"contactCustomer.php\">
+<input name=\"submit\" type=\"submit\" value=\"Contact Seller\">
+</form></td></tr>";
                                 }
                                 echo "</table>";
                             } else {
