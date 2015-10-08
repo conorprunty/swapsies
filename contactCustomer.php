@@ -1,6 +1,7 @@
 <?php
 
-require("common.php"); 
+    // connect to DB
+    require("common.php"); 
      
     // Check whether user is logged in
     if(empty($_SESSION['user'])) 
@@ -13,11 +14,20 @@ require("common.php");
     } 
 
 $userName = $_POST['name'];
-$userEmail = "SELECT email 
-                FROM users
-                WHERE name='$userName'
-                INNER JOIN advert 
-                ON username = name";
+
+$userEmail = "SELECT email FROM users WHERE username = '$userName'";
+
+try 
+        { 
+            // run query
+                $stmt = $db->prepare($userEmail); 
+                $result = $stmt->execute(); 
+                $row = $stmt->fetch(); 
+        } 
+        catch(PDOException $ex) 
+        { 
+            die("Failed to run query: " . $ex->getMessage()); 
+        } 
 
 
 //if "email" variable is filled out, send email
@@ -25,19 +35,21 @@ $userEmail = "SELECT email
   
   //Email information
   //$admin_email = "conorprunty1@gmail.com";
-  $email = $_REQUEST['email'];
+  $email = "admin@swapsies.eu";
   $subject = $_REQUEST['subject'];
   $comment = $_REQUEST['comment'];
   
   //send email - To, Subject, Message, From (etc)
-  mail($admin_email, "$subject", $comment, "From:" . $email);
+  mail($row["email"], "$subject", $comment, "From:" . $email);
   
   //Email response
   // If they are not, redirect to the login page. 
-        header("Location: index.php"); 
-         
-        // this statement is needed 
-        die("Redirecting to index.php");
+        ?>
+            <script type="text/javascript">
+            alert("Mail sent!");
+            window.location.href = "populateTable.php";
+            </script>
+        <?php
   }
   
   //if "email" variable is not filled out, display the form
@@ -55,7 +67,6 @@ $userEmail = "SELECT email
 
 
 <?php
-      echo $userName;
-      echo $userEmail;
+      echo $row["email"];
   }
 ?>

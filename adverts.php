@@ -19,9 +19,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<table><tr><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
-
-                                // output data of first row
+        echo "<table><tr><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th></tr>";
                                 echo "<tr><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
 
                                

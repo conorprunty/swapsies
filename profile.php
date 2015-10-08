@@ -84,7 +84,7 @@ $query = "
                             ?>
     
     <h2> Have you any ads that you wish to delete?</h2>
-    <form action="deleteOpt.php" method="post">
+        <form action="deleteOpt.php" method="post" onsubmit="return confirm('Are you sure? This cannot be undone!');">
         Please select by the ad number:<br>
         <select name="deleteOption">
             <!-- Need this to get the first item -->
