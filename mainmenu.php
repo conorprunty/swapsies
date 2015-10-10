@@ -29,6 +29,15 @@
 
 <body>
     
+    <div id="hmenu"> 
+        <ul> 
+          <li><a href="mainmenu.php">Homepage</a></li> 
+          <li><a href="searchTable.php">View Ads</a></li> 
+          <li><a href="profile.php">Profile</a></li>
+          <li><a href="logout.php">Logout</a></li> 
+        </ul>   
+    </div>
+    
     <div align='center'> 
         <img src="../images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
         <p> This is our slogan</p>

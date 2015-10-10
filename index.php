@@ -98,22 +98,23 @@
 
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <link href="../css/style.css" rel="stylesheet" type="text/css">
-    
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
     <title>Swapsies</title>
 </head>
 
 <body>
-  <!--  <div align='center'>
+    <!--  <div align='center'>
             <form action="index.php" method="post">
                 <h4>Login</h4><input name="username" type="text" value=
                 "<?php echo $submitted_username; ?>">
@@ -129,43 +130,50 @@
     </div>
 
 -->
-    
+
     <div class="container">
-  <div class="jumbotron">
-    <h1>SWAPSIES</h1> 
-     
-  </div>
-  
-</div>
-    
-    
+        <div class="jumbotron">
+            <h1>SWAPSIES</h1>
+
+        </div>
+
+    </div>
+
+
     <div class="row">
         <div class="col-md-offset-4 col-md-4">
-<div class="panel-default">
-    <div class="panel-heading text-center"></div>
-        <div class="panel-body">
-            
+            <div class="panel-default">
+                <div class="panel-heading text-center"></div>
+                <div class="panel-body">
+
                     <form action="index.php" method="post">
-                    <h4>Login</h4><input name="username" type="text" value="<?php echo $submitted_username; ?>">
-                      <h4>Password</h4><input name="password" type="password"><br><br>
-                        <p><input class="btn btn-info btn-block" type="submit" value="Submit"></p>
-                
-                        <a class="btn btn-info btn-block" href="register.php">Register</a> 
-    
-    <a class="btn btn-info btn-block" href="adverts.php">View ads as Guest</a> </br></br>
-                        
+                        <h4>Login</h4>
+                        <input name="username" type="text" value="<?php echo $submitted_username; ?>">
+                        <h4>Password</h4>
+                        <input name="password" type="password">
+                        <br>
+                        <br>
+                        <p>
+                            <input class="btn btn-info btn-block" type="submit" value="Submit">
+                        </p>
+
+                        <a class="btn btn-info btn-block" href="register.php">Register</a>
+
+                        <a class="btn btn-info btn-block" href="adverts.php">View ads as Guest</a> </br>
+                        </br>
+
                         <a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
-            </form>
-                
-               
-</div>
-  </div>   
-  </div>   
-   </div>     
-   </div>     
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
     </div>
-    
-    
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
+
 </html>

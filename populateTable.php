@@ -64,6 +64,17 @@ if (empty($_SESSION['user'])) {
 </head>
 
 <body>
+    
+    <div id="hmenu"> 
+        <ul> 
+          <li><a href="mainmenu.php">Homepage</a></li> 
+          <li><a href="searchTable.php">View Ads</a></li> 
+          <li><a href="profile.php">Profile</a></li>
+          <li><a href="logout.php">Logout</a></li> 
+        </ul>   
+    </div>
+    
+    
     <?php
 if ($row) {
     echo "<table><tr><th>Name</th><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th><th>Contact</th></tr>";

@@ -17,8 +17,6 @@ $opt = $_POST['deleteOption'];
 $sql = "DELETE FROM advert WHERE entryNO = '$opt'";
 
 if ($conn->query($sql) === TRUE) {
-        //$message = "Ad successfully submitted!";
-        //echo "<script type='text/javascript'>alert('$message');</script>";
     
         header("Location: profile.php"); 
     

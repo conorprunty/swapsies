@@ -61,7 +61,16 @@ $query = "
 </head>
 
 <body>
-    <p>Your ads</p>
+    <div id="hmenu"> 
+        <ul> 
+          <li><a href="mainmenu.php">Homepage</a></li> 
+          <li><a href="searchTable.php">View Ads</a></li> 
+          <li><a href="profile.php">Profile</a></li>
+          <li><a href="logout.php">Logout</a></li> 
+        </ul>   
+    </div>
+    
+    <h2>Your ads</h2>
 
     <?php 
 
