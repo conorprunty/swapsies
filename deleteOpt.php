@@ -13,7 +13,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+//select selected option for deletiong
 $opt = $_POST['deleteOption'];
+
+//delete the option based on the user's choice
 $sql = "DELETE FROM advert WHERE entryNO = '$opt'";
 
 if ($conn->query($sql) === TRUE) {

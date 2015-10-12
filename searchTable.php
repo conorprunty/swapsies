@@ -1,6 +1,6 @@
 <?php
 /*
-* adverts.php *
+* searchTable.php *
 *
 */ 
     // connect to DB

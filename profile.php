@@ -15,9 +15,10 @@
         die("Redirecting to index.php"); 
     }    
 
+//get user's name from the logged in username
 $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
-$optOne = "SELECT entryNO FROM advert WHERE entryNo='2'";
 
+//get all options based on user name
 $allOpt = "SELECT entryNo FROM advert WHERE name = '$name'";
 $results = mysql_query($allOpt);
 
@@ -93,6 +94,7 @@ $query = "
                             ?>
     
     <h2> Have you any ads that you wish to delete?</h2>
+    <!-- the onsubmit asks a Yes/No question before proceeding -->
         <form action="deleteOpt.php" method="post" onsubmit="return confirm('Are you sure? This cannot be undone!');">
         Please select by the ad number:<br>
         <select name="deleteOption">

@@ -13,6 +13,7 @@
         die("Redirecting to index.php"); 
     } 
 
+//take user name and use it to get the correct user's email address for sending the email
 $userName = $_POST['name'];
 
 $userEmail = "SELECT email FROM users WHERE username = '$userName'";
@@ -42,8 +43,8 @@ try
   //send email - To, Subject, Message, From (etc)
   mail($row["email"], "$subject", $comment, "From:" . $email);
   
-  //Email response
-  // If they are not, redirect to the login page. 
+  //JS to let user know the mail has been sent
+
         ?>
             <script type="text/javascript">
             alert("Mail sent!");

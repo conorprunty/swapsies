@@ -1,6 +1,6 @@
 <?php
 /*
- * adverts.php *
+ * populateTable.php *
  *
  */
 // connect to DB
@@ -15,19 +15,22 @@ if (empty($_SESSION['user'])) {
     die("Redirecting to index.php");
 } else {
     
+    //selecting invidiual locations for searching
     if ($_POST['locationSelect'] != "") {
         $location = $_POST['locationSelect'];
     } else {
+        //selecting all locations for searching
         $location = "SELECT location FROM advert WHERE location = '*'";
     }
     
+    //selecting individual categories for searching
     if ($_POST['categorySelect'] != "") {
         $category = $_POST['categorySelect'];
     } else {
+        //selecting all categories for searching
         $category = "SELECT category FROM advert WHERE category = '*'";
     }
-    //$location = $_POST['locationSelect'];
-    //$location = mysql_real_escape_string($location);
+
     
     $query = " 
             SELECT 

@@ -15,6 +15,7 @@
         die("Redirecting to index.php"); 
     }    
 
+//takes name from logged in username
 $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
     
 ?>
