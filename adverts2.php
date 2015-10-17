@@ -1,25 +1,13 @@
-<?php 
+<?php
+/*
+ * populateTable.php *
+ *
+ */
+// connect to DB
+require("common.php");
 
-// set database server access variables: 
-$host = "localhost"; 
-$user = "root"; 
-$pass = "root"; 
-$db1 = "mainDB";
 
-
-
-// open connection 
-$connection = mysql_connect($host, $user, $pass) or die ("Unable to connect!"); 
-
-// select database 
-mysql_select_db($db1) or die ("Unable to select database!"); 
-
-// create query 
-$query = " 
-            SELECT name, comments, location, category, price
-            FROM advert
-            ORDER BY entryNo DESC;
-        ";
+    $query = "SELECT name, comments, location, category, price FROM advert";
     
     
     try {
@@ -32,7 +20,7 @@ $query = "
         die("Failed to run query: " . $ex->getMessage());
     }
     
-}
+
 
 ?>
 <!DOCTYPE html>
@@ -54,9 +42,10 @@ $query = "
         </ul>   
     </div>
     
+    
     <?php
 if ($row) {
-    echo "<table><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th>></tr>";
+    echo "<table><tr><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th></tr>";
     $count = 1;
     // output data of first row
     echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
@@ -73,13 +62,3 @@ if ($row) {
 ?>
 </body>
 </html>
-
-<?php
-
-// free result set memory 
-mysql_free_result($result); 
-
-// close connection 
-mysql_close($connection); 
-
-?>

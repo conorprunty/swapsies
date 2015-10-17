@@ -1,42 +1,82 @@
-<?php 
+<?php
+/*
+ * populateTable.php *
+ *
+ */
+// connect to DB
+require("common.php");
 
-// set database server access variables: 
-$host = "localhost"; 
-$user = "root"; 
-$pass = "root"; 
-$db = "mainDB";
-
-
-
-// open connection 
-$connection = mysql_connect($host, $user, $pass) or die ("Unable to connect!"); 
-
-// select database 
-mysql_select_db($db) or die ("Unable to select database!"); 
-
-// create query 
-$query = "SELECT name, comments, location, category, price FROM advert"; 
-//$query = "SELECT name FROM advert";
-
-
-// execute query 
-$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error()); 
-
-// see if any rows were returned 
-if (mysql_num_rows($result) > 0) { 
-    // yes 
-    // print them one after another
-    echo "<table border='1'><tr><th>Name</th><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th><th>Contact</th></tr>";
-
-    echo "<tr><td> Test note</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
-
+if ($_POST['locationSelect'] != "") {
+        $location = $_POST['locationSelect'];
+    } else {
+        //selecting all locations for searching
+        $location = "SELECT location FROM advert WHERE location = '*'";
+    }
     
+    //selecting individual categories for searching
+    if ($_POST['categorySelect'] != "") {
+        $category = $_POST['categorySelect'];
+    } else {
+        //selecting all categories for searching
+        $category = "SELECT category FROM advert WHERE category = '*'";
+    }
+
+
+    $query =    "SELECT name, comments, location, category, price 
+                FROM advert 
+                WHERE location='$location'
+                AND category='$category';";
+    
+    
+    try {
+        // run query
+        $stmt   = $db->prepare($query);
+        $result = $stmt->execute($query_params);
+        $row    = $stmt->fetch();
+    }
+    catch (PDOException $ex) {
+        die("Failed to run query: " . $ex->getMessage());
+    }
+    
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="main.js"></script>
+
+    <title>Test Page</title>
+</head>
+
+<body>
+    
+    <div id="hmenu"> 
+        <ul> 
+          <li><a href="mainmenu.php">Homepage</a></li> 
+        </ul>   
+    </div>
+    
+    
+    <?php
+if ($row) {
+    echo "<table><tr><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+    $count = 1;
+    // output data of first row
+    echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
+    // output data of next rows
+    while ($row = $stmt->fetch()) {
+        $count++;
+        echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
+    }
     echo "</table>";
 } else {
     echo "0 results";
 }
 
-// close connection 
-mysql_close($connection); 
-
 ?>
+</body>
+</html>
