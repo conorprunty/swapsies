@@ -46,25 +46,13 @@
           <li><a href="searchTable.php">View Ads</a></li> 
           <li><a href="profile.php">Profile</a></li>
           <li><a href="logout.php">Logout</a></li> 
-        </ul>   
-    </div>
+        </ul>
+<img src="../images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
+
     
-    <div align='center'> 
-        <img src="../images/NameSwapping.png" alt="Header Test" style="width:304px;height:228px;">
         <p> This is our slogan</p>
-        
-        <a href="insert.php">Submit ad</a>
-        <br>
-        <br>
-        
-        <a href="searchTable.php">view ads</a>
-        <br>
-        <br>
-        
-    
-    <a href="logout.php">Logout</a>
-        
     </div> -->
+
     
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -80,7 +68,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="mainmenu.php">Home</a></li>
         
-        <li><a href="searchTable.php">Search Ads</a></li> 
+        <li><a href="searchTable.php">Search Ads</a></li>
+          <li><a href="comments.php">Comments</a></li> 
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -90,7 +79,14 @@
     </div>
   </div>
 </nav>
-    
+    <div align='center'> 
+        
+
+    <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="250"
+  height="500" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                
+   
+    </div> 
     
 </body>
 </html>
