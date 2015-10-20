@@ -56,22 +56,47 @@ $query = "
 <head lang="en">
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <title>Profile</title>
 </head>
 
-<body>
-    <div id="hmenu"> 
-        <ul> 
-          <li><a href="mainmenu.php">Homepage</a></li> 
-          <li><a href="searchTable.php">View Ads</a></li> 
-          <li><a href="profile.php">Profile</a></li>
-          <li><a href="logout.php">Logout</a></li> 
-        </ul>   
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Swapsies</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="mainmenu.php">Home</a></li>
+        
+        <li><a href="searchTable.php">Search Ads</a></li>
+          <li><a href="comments.php">Comments</a></li> 
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
-    <h2>Your ads</h2>
+    <div align='center'>
 
     <?php 
 
@@ -96,7 +121,7 @@ $query = "
     <h2> Have you any ads that you wish to delete?</h2>
     <!-- the onsubmit asks a Yes/No question before proceeding -->
         <form action="deleteOpt.php" method="post" onsubmit="return confirm('Are you sure? This cannot be undone!');">
-        Please select by the ad number:<br>
+        Please select by the ad number:
         <select name="deleteOption">
             <!-- Need this to get the first item -->
 
@@ -111,8 +136,9 @@ $query = "
             </option><?php 
                             }
                             ?>
-        </select><br>
-        <button>Submit</button>
+        </select><br><br>
+        <button>Delete</button>
     </form>
+        </div>
 </body>
 </html>
