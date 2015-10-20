@@ -62,6 +62,10 @@ if (empty($_SESSION['user'])) {
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="main.js"></script>
+  <meta charset="utf-8">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
 
     <title>Test Page</title>
 </head>
