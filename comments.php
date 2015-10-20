@@ -6,15 +6,7 @@
     // connect to DB
     require("common.php"); 
      
-    // Check whether user is logged in
-    if(empty($_SESSION['user'])) 
-    { 
-        // If they are not, redirect to the login page. 
-        header("Location: index.php"); 
-         
-        // this statement is needed 
-        die("Redirecting to index.php"); 
-    } 
+   
     
 ?>
 
@@ -27,7 +19,8 @@
             src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script type="text/javascript" 
             src="./easy-comment/jquery.easy-comment.js"></script>
-      
+    
+      <!--
     <script type="text/javascript">
     jQuery(document).ready(function(){
     // Your other javascript code if any
@@ -40,6 +33,7 @@
     // Your other javascript code if any
     });
     </script>
+-->
   </head>
   <body>
     <div id="id_of_your_comment_container" style="width:1024px;height:800px;"></div>

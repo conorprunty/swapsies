@@ -57,6 +57,7 @@ if ($_POST['locationSelect'] != "") {
     <div id="hmenu"> 
         <ul> 
           <li><a href="mainmenu.php">Homepage</a></li> 
+            <li><a href="comments.php">Comments</a></li>
         </ul>   
     </div>
     
