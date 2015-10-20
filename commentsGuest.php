@@ -1,19 +1,12 @@
 <?php
 /*
-* mainmenu.php *
+* comments.php *
+
+src = htmlcommentbox.com
+*
 */ 
     // connect to DB
     require("common.php"); 
-     
-    // Check whether user is logged in
-    if(empty($_SESSION['user'])) 
-    { 
-        // If they are not, redirect to the login page. 
-        header("Location: index.php"); 
-         
-        // this statement is needed 
-        die("Redirecting to index.php"); 
-    }    
     
 ?>
 
@@ -35,11 +28,7 @@
     <title>Swapsies</title>
 </head>
 
-
-
 <body>
-
-
     
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -55,25 +44,27 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="mainmenu.php">Home</a></li>
         
-        <li><a href="searchTable.php">Search Ads</a></li>
-          <li><a href="comments.php">Comments</a></li> 
+        <li><a href="searchAsGuest.php">Search Ads</a></li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
-        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        <li><a href="index.php"><span class="glyphicon glyphicon-user"></span>Log In</a></li>
       </ul>
     </div>
   </div>
 </nav>
-    <div align='center'> 
-        
-
-    <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="250"
-  height="500" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                
-   
-    </div> 
     
-</body>
-</html>
+      
+      <!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"></div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1445081423392");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+    
+    
+    
+    
+      
+  </body>
+</html> 

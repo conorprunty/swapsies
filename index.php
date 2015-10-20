@@ -114,22 +114,6 @@
 </head>
 
 <body>
-    <!--  <div align='center'>
-            <form action="index.php" method="post">
-                <h4>Login</h4><input name="username" type="text" value=
-                "<?php echo $submitted_username; ?>">
-
-                <h4>Password</h4><input name="password" type="password"><br><br>
-                
-                <p><input class="button" type="submit" value="Submit"></p>
-                
-				<a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
-                <br><br>
-                <a class="button" href="register.php">Register</a>
-            </form>
-    </div>
-
--->
 
     <div class="container">
         <div class="jumbotron">
