@@ -106,6 +106,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -132,9 +134,17 @@
 
                     <form action="index.php" method="post">
                         <h4>Login</h4>
-                        <input name="username" type="text" value="<?php echo $submitted_username; ?>">
-                        <h4>Password</h4>
-                        <input name="password" type="password">
+                        
+                        <div class="input-group"> 
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input name="username" class = "form-control" id="input-default" type="text" placeholder="Username" value="<?php echo $submitted_username; ?>"></div>
+                        
+                            
+                            <h4>Password</h4>
+    
+       <div class="input-group">                 
+      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>                    
+                        <input name="password" class = "form-control" id="input-default" type="password" placeholder="Password"></div>
                         <br>
                         <br>
                         <p>

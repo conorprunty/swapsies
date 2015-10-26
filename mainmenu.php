@@ -26,6 +26,10 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -67,13 +71,81 @@
   </div>
 </nav>
     <div align='center'> 
+        <br>
         
-
-    <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="250"
-  height="500" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                
-   
-    </div> 
+        
+        <div class="panel panel-default">
+  <div class="panel-heading">Manage Posts</div>
+  <div class="panel-body">
+        
+<div class="row">
+<div class="col-md-4">
+        
+<div class="panel panel-default">
+<div class="panel-body">
+<button type="button" class="btn btn-primary btn-lg btn-block">CREATE ADS</button>
+</div>
+</div>
+</div>
     
+ <div class="col-md-4">
+        
+<div class="panel panel-default">
+<div class="panel-body">
+<button type="button" class="btn btn-primary btn-lg btn-block">SEARCH ADS</button>
+</div>
+</div>
+</div>
+    
+<div class="col-md-4">
+        
+<div class="panel panel-default">
+<div class="panel-body">
+<button type="button" class="btn btn-primary btn-lg btn-block">DELETE ADS</button>
+</div>
+</div>
+</div>
+      </div>
+            </div>
+    <br><br>
+         
+<div class="row">
+<div class="col-md-offset-3 col-md-6">
+        
+<div class="panel panel-default">
+    <div class="panel-heading">Swapsies Twitter Feed</div>
+<div class="panel-body">
+<a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="500"
+  height="250" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+</div>
+</div>
+</div>   
+    
+    
+    
+    
+    
+</div>
+      
+            
+<div class="btn-group open">
+<a class="btn btn-success" href="#"><i class="fa fa-facebook-official fa-4x"></i></a>
+ <a class="btn btn-primary" href="#"><i class="fa fa-twitter-square fa-4x"></i></a>
+    
+    <a class="btn btn-danger" href="#"><i class="fa fa-linkedin fa-4x"></i></a>
+    
+  
+        
+       
+                  
+</div>
+            
+           
+  
+  
+ 
+ </div>
+
 </body>
 </html>

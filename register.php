@@ -163,6 +163,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -197,18 +199,46 @@
   </div>
 </nav>
     <div align='center'>
-            <h1>Register</h1>
+        
+        
+     
+            
+<div class="row">
+    
+<div class="col-md-offset-4 col-md-4">
+<div class="panel-default">
+<div class="panel-heading text-center"></div>
+<div class="panel-body">
+       
+<form action="register.php" method="post">
+    
+<div class="input-group"> 
+<span class="input-group-addon"><i class="fa fa-user"></i></span>
+    
+<input name="username"class = "form-control" id ="input-default" type="text" placeholder= "Username" value=""></div><br>
 
-            <form action="register.php" method="post">
-                <p>Username:</p><input name="username" type="text" value="">
-
-                <p>Password:</p><input name="password" type="password" value="">
                 
-                <p>E-Mail:</p><input name="email" type="text" value="">
+<div class="input-group"> 
+<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>   
+    
+<input name="password" class= "form-control" id ="input-default" type="password" placeholder="Password" value=""></div><br>
+    
+<div class="input-group"> 
+<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>    
+                
+<input name="email" class = "form-control" id="input-default" type="text" placeholder="Email" value=""></div>
+    
                 <br>
                 <br>
-                <input class="button" type="submit" value="Register">
-            </form>
-    </div>
+    <div class="btn-group open">
+        
+
+  <input class="btn btn-primary" type="submit" class= "form-control" id="input-default" value="Register">
+</form>
+</div>
+</div>
+</div>
+</div>
+        
 </body>
 </html>
