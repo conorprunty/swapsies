@@ -83,7 +83,7 @@
         
 <div class="panel panel-default">
 <div class="panel-body">
-<button type="button" class="btn btn-primary btn-lg btn-block">CREATE ADS</button>
+<a href="insert.php" class="btn btn-primary btn-lg btn-block">CREATE ADS</a>
 </div>
 </div>
 </div>
@@ -92,7 +92,7 @@
         
 <div class="panel panel-default">
 <div class="panel-body">
-<button type="button" class="btn btn-primary btn-lg btn-block">SEARCH ADS</button>
+<a href="searchTable.php" class="btn btn-primary btn-lg btn-block">SEARCH ADS</a>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@
         
 <div class="panel panel-default">
 <div class="panel-body">
-<button type="button" class="btn btn-primary btn-lg btn-block">DELETE ADS</button>
+<a href="profile.php" class="btn btn-primary btn-lg btn-block">PROFILE</a>
 </div>
 </div>
 </div>
@@ -130,10 +130,10 @@
       
             
 <div class="btn-group open">
-<a class="btn btn-success" href="#"><i class="fa fa-facebook-official fa-4x"></i></a>
- <a class="btn btn-primary" href="#"><i class="fa fa-twitter-square fa-4x"></i></a>
+<a class="btn btn-success" href="http://www.facebook.com"><i class="fa fa-facebook-official fa-4x"></i></a>
+ <a class="btn btn-primary" href="http://www.twitter.com"><i class="fa fa-twitter-square fa-4x"></i></a>
     
-    <a class="btn btn-danger" href="#"><i class="fa fa-linkedin fa-4x"></i></a>
+    <a class="btn btn-danger" href="http://www.linkedin.com"><i class="fa fa-linkedin fa-4x"></i></a>
     
   
         
