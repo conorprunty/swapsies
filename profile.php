@@ -102,7 +102,7 @@ $query = "
 
                                 if($row)
                                 {
-                                    echo "<table><tr><th>Ad Number</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+                                    echo "<table class='fulltable'><tr><th>Ad Number</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
                                     $count = 1;
                                     // output data of first row
                                     echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";

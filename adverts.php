@@ -86,10 +86,10 @@ if ($_POST['locationSelect'] != "") {
   </div>
 </nav>
     
-    
+    <div align='center'>
     <?php
 if ($row) {
-    echo "<table><tr><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+    echo "<table class='fulltable'><tr><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th></tr>";
     $count = 1;
     // output data of first row
     echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
@@ -104,5 +104,6 @@ if ($row) {
 }
 
 ?>
+        </div>
 </body>
 </html>
