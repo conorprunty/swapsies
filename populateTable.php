@@ -88,6 +88,7 @@ if (empty($_SESSION['user'])) {
         <li class="active"><a href="mainmenu.php">Home</a></li>
         
         <li><a href="searchTable.php">Search Ads</a></li>
+          <li><a href="insert.php">Create Ad</a></li>
           <li><a href="comments.php">Comments</a></li> 
         
       </ul>
@@ -101,13 +102,13 @@ if (empty($_SESSION['user'])) {
     <div align='center'>
     <?php
 if ($row) {
-    echo "<table class='fulltable'><tr><th>Name</th><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th><th>Contact</th></tr>";
+    echo "<table class='fulltable'><tr><th>NAME</th><th>FOR BARTER</th><th>LOCATION</th><th>CATEGORY</th><th>VALUE</th><th>CONTACT</th></tr>";
     $count = 1;
     // output data of first row
     echo "<tr><td>" . $row["name"] . "</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td>";
     echo "<td><form id= \"$FormName\" method=\"post\" action=\"contactCustomer.php\">
     <input type=\"hidden\" name=\"name\" value=" . $row["name"] . ">
-    <input name=\"submit\" type=\"submit\" value=\"Contact Seller\">
+    <input class=\"submitb\" name=\"submit\" type=\"image\" src=\"contactimg.ico\" value=\"Contact Seller\">
     </form></td></tr>";
     // output data of next rows
     while ($row = $stmt->fetch()) {
@@ -115,7 +116,7 @@ if ($row) {
         echo "<tr><td>" . $row["name"] . "</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td>";
         echo "<td><form id= \"$FormName\" method=\"post\" action=\"contactCustomer.php\">
     <input type=\"hidden\" name=\"name\" value=" . $row["name"] . ">
-    <input name=\"submit\" type=\"submit\" value=\"Contact Seller\">
+    <input class=\"submitb\" name=\"submit\" type=\"image\" src=\"contactimg.ico\" value=\"Contact Seller\">
     </form></td></tr>";
     }
     echo "</table>";

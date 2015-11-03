@@ -1,3 +1,7 @@
+body{
+ background-color: lightgray;
+}
+
 table, td, th {
     border: 1px solid green;
 }
@@ -6,53 +10,46 @@ table.fulltable {
 	font-family: verdana,arial,sans-serif;
 	font-size:11px;
 	color:#333333;
-	border-width: 1px;
-	border-color: #999999;
+	border-width: 3px;
+	border-color: greenyellow;
 	border-collapse: collapse;
 }
 table.fulltable th {
-	background-color:#c3dde0;
+    text-align: center;
+    color: white;
+    font-size:15px;
+	background-color:black;
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #a9c6c9;
+	border-color: hotpink;
 }
 table.fulltable tr {
-	background-color:#d4e3e5;
+	background-color:white;
+    color: black;
 }
 table.fulltable td {
 	border-width: 1px;
 	padding: 15px;
 	border-style: solid;
-	border-color: #a9c6c9;
+	border-color: pink;
     height: 50px;
     vertical-align: bottom;
+    max-width: 350px;
+    border-width: 3px;
+    text-align: justify;
+}
+table.fulltable tr:hover { 
+    background-color: lightgoldenrodyellow;
 }
 
-
-
-
-table.gridtable {
-	font-family: verdana,arial,sans-serif;
-	font-size:11px;
-	color:#333333;
-	border-width: 1px;
-	border-color: #666666;
-	border-collapse: collapse;
-}
-table.gridtable th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
-}
-table.gridtable td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #ffffff;
+.submitb{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 

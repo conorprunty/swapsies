@@ -54,7 +54,7 @@ src = htmlcommentbox.com
         <li class="active"><a href="mainmenu.php">Home</a></li>
         
         <li><a href="searchTable.php">Search Ads</a></li>
-          <li><a href="comments.php">Comments</a></li> 
+          <li><a href="insert.php">Create Ad</a></li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">

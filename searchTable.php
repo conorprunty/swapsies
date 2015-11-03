@@ -50,7 +50,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="mainmenu.php">Home</a></li>
-
+          <li><a href="insert.php">Create Ad</a></li>
           <li><a href="comments.php">Comments</a></li> 
         
       </ul>
