@@ -64,44 +64,62 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
   </div>
 </nav>
 
-    <div align='center'> 
+    <div align='center'>
+        <div class="col-md-offset-4 col-md-4">
+            <div class="panel-default">
+            <div class="panel-heading text-center">
+            <div class="panel-body">
         <form action="submitForm.php" method="post">
-            Name:<br>
+            Name:
             <?php echo (htmlentities($_SESSION['user']['username'])); ?>
             <input type="hidden" name="name" value="<?php echo $name?>"/>
             <br>
             Comment<br>
-            <input type="text" name="comments" maxlength="250" placeholder="Enter your ad here...">
+            <input type="text"  name="comments" maxlength="250" placeholder="Enter your ad here...">
             <br>
-            Location:<br>
-            <select name='location'>
-                <option value="leinster">Leinster</option>
-                <option value="munster">Munster</option>
-                <option value="connacht">Connacht</option>
-                <option value="ulster">Ulster</option>
-            </select>
-            <br>
-            Category:<br>
-            <select name='category'>
-                <option value="cars">Cars</option>
-                <option value="music">Music</option>
-                <option value="goods">Goods</option>
-                <option value="other">Other</option>
-            </select>
-            <br>
-            Price:<br>
-            <select name='price'>
-                <option value="0-19">$0 - $19.99</option>
-                <option value="20-39">$20 - $39.99</option>
-                <option value="40-59">$40 - $59.99</option>
-                <option value="60+">$60+</option>
-            </select>
+            
+                <div class="form-group">
+                    <label for="sel1">Location:</label>
+                    <select class="form-control" id="sel1" name='location'>
+                        <option value="leinster">Leinster</option>
+                        <option value="munster">Munster</option>
+                        <option value="connacht">Connacht</option>
+                        <option value="ulster">Ulster</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="sel1">Category:</label>
+                    <select class="form-control" id="sel1" name='category'>
+                        <option value="cars">Cars</option>
+                        <option value="music">Music</option>
+                        <option value="goods">Goods</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <label for="sel1">Price:</label>
+                    <select class="form-control" id="sel1" name='price'>
+                        <option value="0-19">$0 - $19.99</option>
+                    <option value="20-39">$20 - $39.99</option>
+                    <option value="40-59">$40 - $59.99</option>
+                    <option value="60+">$60+</option>
+                    </select>
+                </div>
+            
+
             <br><br>
             <input type="submit" value="Submit">
         </fieldset>
 </form>
         
     </div>
+                </div>
+            </div>
+            </div>
+            </div>
     
     
 </body>

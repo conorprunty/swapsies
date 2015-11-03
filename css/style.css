@@ -52,6 +52,22 @@ table.fulltable tr:hover {
     
 }
 
+#deleteBtn{
+    height:35px;
+    width:35px;
+}
+
+#tablediv{
+    float: right;
+    padding-right: 230px;
+}
+#deleteads{
+    padding-left: 25px;
+    padding-top: 50px;
+    float:left;
+    background-color: lightblue;
+}
+
 
 /* These CSS tags relate to the index page currently*/
 

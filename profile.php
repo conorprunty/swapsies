@@ -97,13 +97,13 @@ $query = "
   </div>
 </nav>
     
-    <div align='center'>
+    <div align='center' id='tablediv'>
 
     <?php 
 
                                 if($row)
                                 {
-                                    echo "<table class='fulltable'><tr><th>Ad Number</th><th>Comments</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+                                    echo "<table class='fulltable'><tr><th>AD NUMBER</th><th>COMMENTS</th><th>LOCATION</th><th>CATEGORY</th><th>VALUE</th></tr>";
                                     $count = 1;
                                     // output data of first row
                                     echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
@@ -119,10 +119,13 @@ $query = "
                             
                             ?>
     
-    <h2> Have you any ads that you wish to delete?</h2>
+  
+        </div>
+    
+    <div id='deleteads'>  <p> Unwanted ad? Delete it!</p>
     <!-- the onsubmit asks a Yes/No question before proceeding -->
         <form action="deleteOpt.php" method="post" onsubmit="return confirm('Are you sure? This cannot be undone!');">
-        Please select by the ad number:
+        Please select ad number:
         <select name="deleteOption">
             <!-- Need this to get the first item -->
 
@@ -138,8 +141,7 @@ $query = "
                             }
                             ?>
         </select><br><br>
-        <button>Delete</button>
-    </form>
-        </div>
+        <input id='deleteBtn' type="image" src="deleteBtn.png" />
+    </form></div>
 </body>
 </html>
