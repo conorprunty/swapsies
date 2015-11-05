@@ -70,16 +70,17 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
             <div class="panel-heading text-center">
             <div class="panel-body">
         <form action="submitForm.php" method="post">
-            Name:
+            <label>Name:</label>
             <?php echo (htmlentities($_SESSION['user']['username'])); ?>
             <input type="hidden" name="name" value="<?php echo $name?>"/>
             <br>
-            Your Ad:<br>
-            <input type="text"  name="comments" maxlength="250" placeholder="Enter your ad here...">
-            <br>
+         
+      <label>Description</label>
+      <textarea class="form-control" name="comments" rows="3" id="comment"placeholder="Enter your ad here..." maxlength="250"></textarea>
+
             
                 <div class="form-group">
-                    <label for="sel1">Location:</label>
+                    <label for="sel1">Location</label>
                     <select class="form-control" id="sel1" name='location'>
                         <option value="leinster">Leinster</option>
                         <option value="munster">Munster</option>
@@ -87,9 +88,9 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
                         <option value="ulster">Ulster</option>
                     </select>
                 </div>
-                <br>
+                
                 <div class="form-group">
-                    <label for="sel1">Category:</label>
+                    <label for="sel1">Category</label>
                     <select class="form-control" id="sel1" name='category'>
                         <option value="cars">Cars</option>
                         <option value="music">Music</option>
@@ -98,24 +99,26 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
                     </select>
                 </div>
 
-                <br>
+                
                 <div class="form-group">
-                    <label for="sel1">Value:</label>
+                    <label for="sel1">Value</label>
                     <select class="form-control" id="sel1" name='price'>
-                        <option value="0-19">$0 - $19.99</option>
-                    <option value="20-39">$20 - $39.99</option>
-                    <option value="40-59">$40 - $59.99</option>
-                    <option value="60+">$60+</option>
+                        <option value="0-19">€0-19.99</option>
+                    <option value="20-39">€20-39.99</option>
+                    <option value="40-59">€40-€59.99</option>
+                    <option value="60+">€60+</option>
                     </select>
                     
                     <br>
-            What will you accept?<br>
-            <input type="text"  name="WillAccept" maxlength="250" placeholder="I will accept...">
+                    <label>What will you barter?</label>
+    
+      <textarea class="form-control" name="comments" name="WillAccept" maxlength="250" placeholder="I will accept..." rows="3" id="comment"placeholder="Enter your ad here..."></textarea>
                 </div>
             
 
-            <br><br>
+            <br>
             <input type="submit" value="Submit">
+             
         </fieldset>
 </form>
         
