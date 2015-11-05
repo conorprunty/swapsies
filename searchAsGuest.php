@@ -63,7 +63,7 @@
                 <option value="munster">Munster</option>
             </select>
             <br>
-            <p>Search by category</p>
+            <p>Search by category:</p>
             <select name='categorySelect'>
                 <option value="" selected>Select All</option>
                 <option value="cars">Cars</option>
@@ -72,6 +72,15 @@
                 <option value="other">Other</option>
             </select>
             <br>
+            <p>Search by value:</p>
+                <select name='priceSelect'>
+                    <option value="" selected>Select All</option>
+                    <option value="0-19">$0 - $19.99</option>
+                    <option value="20-39">$20 - $39.99</option>
+                    <option value="40-59">$40 - $59.99</option>
+                    <option value="60+">$60+</option>
+                </select>
+                <br>
             <button> Submit </button>
         </form>
     

@@ -21,11 +21,20 @@ if ($_POST['locationSelect'] != "") {
         $category = "SELECT category FROM advert WHERE category = '*'";
     }
 
+    //selecting individual categories for searching
+        if ($_POST['priceSelect'] != "") {
+            $price = $_POST['priceSelect'];
+        } else {
+            //selecting all categories for searching
+            $price = "SELECT category FROM advert WHERE price = '*'";
+        }
 
-    $query =    "SELECT name, comments, location, category, price 
+
+    $query =    "SELECT name, comments, location, category, price, WillAccept 
                 FROM advert 
                 WHERE location='$location'
-                AND category='$category';";
+                AND category='$category'
+                ORDER BY entryNo DESC;";
     
     
     try {
@@ -89,14 +98,14 @@ if ($_POST['locationSelect'] != "") {
     <div align='center'>
     <?php
 if ($row) {
-    echo "<table class='fulltable'><tr><th>For Barter</th><th>Location</th><th>Category</th><th>Price</th></tr>";
+    echo "<table class='fulltable'><tr><th>FOR BARTER</th><th>LOCATION</th><th>CATEGORY</th><th>VALUE</th><th>WILL ACCEPT</th></tr>";
     $count = 1;
     // output data of first row
-    echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
+    echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td><td> " . $row["WillAccept"] . "</td></tr>";
     // output data of next rows
     while ($row = $stmt->fetch()) {
         $count++;
-        echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td></tr>";
+        echo "<tr><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td><td> " . $row["WillAccept"] . "</td></tr>";
     }
     echo "</table>";
 } else {

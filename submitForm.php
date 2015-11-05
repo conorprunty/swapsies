@@ -15,8 +15,8 @@ if ($conn->connect_error) {
 
 
 //enter ad into database
-$sql = "INSERT INTO advert (name, comments, location, category, price)
-VALUES ('$_POST[name]', '$_POST[comments]', '$_POST[location]', '$_POST[category]', '$_POST[price]')";
+$sql = "INSERT INTO advert (name, comments, location, category, price, WillAccept)
+VALUES ('$_POST[name]', '$_POST[comments]', '$_POST[location]', '$_POST[category]', '$_POST[price]', '$_POST[WillAccept]')";
 
 if ($conn->query($sql) === TRUE) {
         //$message = "Ad successfully submitted!";

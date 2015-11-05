@@ -74,7 +74,7 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
             <?php echo (htmlentities($_SESSION['user']['username'])); ?>
             <input type="hidden" name="name" value="<?php echo $name?>"/>
             <br>
-            Comment<br>
+            Your Ad:<br>
             <input type="text"  name="comments" maxlength="250" placeholder="Enter your ad here...">
             <br>
             
@@ -100,13 +100,17 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
 
                 <br>
                 <div class="form-group">
-                    <label for="sel1">Price:</label>
+                    <label for="sel1">Value:</label>
                     <select class="form-control" id="sel1" name='price'>
                         <option value="0-19">$0 - $19.99</option>
                     <option value="20-39">$20 - $39.99</option>
                     <option value="40-59">$40 - $59.99</option>
                     <option value="60+">$60+</option>
                     </select>
+                    
+                    <br>
+            What will you accept?<br>
+            <input type="text"  name="WillAccept" maxlength="250" placeholder="I will accept...">
                 </div>
             
 
