@@ -106,11 +106,11 @@ $query = "
                                     echo "<table class='fulltable'><tr><th>AD NUMBER</th><th>FOR BARTER</th><th>LOCATION</th><th>CATEGORY</th><th>VALUE</th></tr>";
                                     $count = 1;
                                     // output data of first row
-                                    echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
+                                    echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td>€" . $row["price"]. "</td></tr>";
                                     // output data of next rows
                                     while($row = $stmt->fetch()) {
                                         $count++;
-                                        echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td> " . $row["price"]. "</td></tr>";
+                                        echo "</td><td> " . $row["entryNo"]. "</td><td> " . $row["comments"]. "</td><td> " . $row["location"]. "</td><td> " . $row["category"]. "</td><td>€" . $row["price"]. "</td></tr>";
                                     }
                                     echo "</table>";
                                 } else {

@@ -31,13 +31,13 @@ if (empty($_SESSION['user'])) {
         $category = "SELECT category FROM advert WHERE category = '*'";
     }
     
-    //selecting individual categories for searching
-    if ($_POST['priceSelect'] != "") {
-        $price = $_POST['priceSelect'];
-    } else {
-        //selecting all categories for searching
-        $price = "SELECT price FROM advert WHERE category = '*'";
-    }
+    //selecting individual prices for searching
+    //if ($_POST['priceSelect'] != "") {
+      //  $price = $_POST['priceSelect'];
+    //} else {
+        //selecting all prices for searching
+      //  $price = "SELECT price FROM advert WHERE price = '*'";
+    //}
 
     
     $query = " 
@@ -46,7 +46,6 @@ if (empty($_SESSION['user'])) {
             FROM advert
             WHERE location='$location'
             AND category='$category'
-            AND price='$price'
             ORDER BY entryNo DESC;
         ";
     
@@ -114,7 +113,7 @@ if ($row) {
     echo "<table class='fulltable'><tr><th>NAME</th><th>FOR BARTER</th><th>LOCATION</th><th>CATEGORY</th><th>VALUE</th><th>WILL ACCEPT</th><th>CONTACT</th></tr>";
     $count = 1;
     // output data of first row
-    echo "<tr><td>" . $row["name"] . "</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td><td> " . $row["WillAccept"] . "</td>";
+    echo "<tr><td>" . $row["name"] . "</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td>€" . $row["price"] . "</td><td> " . $row["WillAccept"] . "</td>";
     echo "<td><form id= \"$FormName\" method=\"post\" action=\"contactCustomer.php\">
     <input type=\"hidden\" name=\"name\" value=" . $row["name"] . ">
     <input class=\"submitb\" name=\"submit\" type=\"image\" src=\"contactimg.ico\" value=\"Contact Seller\">
@@ -122,7 +121,7 @@ if ($row) {
     // output data of next rows
     while ($row = $stmt->fetch()) {
         $count++;
-        echo "<tr><td>" . $row["name"] . "</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td> " . $row["price"] . "</td><td> " . $row["WillAccept"] . "</td>";
+        echo "<tr><td>" . $row["name"] . "</td><td> " . $row["comments"] . "</td><td> " . $row["location"] . "</td><td> " . $row["category"] . "</td><td>€" . $row["price"] . "</td><td> " . $row["WillAccept"] . "</td>";
         echo "<td><form id= \"$FormName\" method=\"post\" action=\"contactCustomer.php\">
     <input type=\"hidden\" name=\"name\" value=" . $row["name"] . ">
     <input class=\"submitb\" name=\"submit\" type=\"image\" src=\"contactimg.ico\" value=\"Contact Seller\">
