@@ -145,11 +145,12 @@
             die("Failed to run query: " . $ex->getMessage()); 
         } 
          
-        // redirect user to login page
-        header("Location: index.php"); 
-         
-        // redirect user 
-        die("Redirecting to index.php"); 
+        ?>
+        <script type="text/javascript">
+            alert("Thank you for registering! Please click OK to go to login page.");
+            window.location.href = "index.php";
+            </script>
+<?php
     } 
 
      

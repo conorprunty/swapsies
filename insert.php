@@ -112,7 +112,7 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
                     <br>
                     <label>What will you barter?</label>
     
-      <textarea class="form-control" name="comments" name="WillAccept" maxlength="250" placeholder="I will accept..." rows="3" id="comment"placeholder="Enter your ad here..."></textarea>
+      <textarea class="form-control" name="WillAccept" maxlength="250" placeholder="I will accept..." rows="3" id="comment"placeholder="Enter your ad here..."></textarea>
                 </div>
             
 

@@ -95,7 +95,7 @@
                 <option value="other">Other</option>
             </select>
     </div>
-            <br>
+
     <div class="form-group">
         <label>Search by value:</label>
 
