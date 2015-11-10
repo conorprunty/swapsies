@@ -1,5 +1,12 @@
+.logo {
+  display: block;
+    margin:auto;
+    padding: 0,0,0,0;
+   }
+
+
 body{
- background-color: lightgray;
+ background-color:wheat !important;
 }
 
 table, td, th {
@@ -81,7 +88,8 @@ a {
 }
 
 .jumbotron {
-background-color:transparent!important;    
+background-color:transparent!important; 
+    padding-top: 100px
 }
 
 
@@ -99,71 +107,11 @@ h1 {
   text-align: center;
 }
 
-h4 {
+h5 {
     
  color: white !important;
     text-align: center;
 }
-
-/* These CSS tags are for the temp nav bar */
-div#hmenu { 
-   margin: 0; 
-   padding: .3em 0 .3em 0; 
-   background-color: coral; 
-   width: 100%; 
-   text-align: center; 
-} 
-
-div#hmenu ul { 
-   list-style: none; 
-   margin: 0; 
-   padding: 0; 
-} 
-
-div#hmenu ul li { 
-   margin: 0; 
-   padding: 0; 
-   display: inline; 
-} 
-
-div#hmenu ul a:link{ 
-   margin: 0; 
-   padding: .3em .4em .3em .4em; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size: medium; 
-   color: #004415; 
-} 
-
-div#hmenu ul a:visited{ 
-   margin: 0; 
-   padding: .3em .4em .3em .4em; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size: medium; 
-   color: #227755; 
-} 
-
-div#hmenu ul a:active{ 
-   margin: 0; 
-   padding: .3em .4em .3em .4em; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size: medium; 
-   color: #227755; 
-} 
-
-div#hmenu ul a:hover{ 
-   margin: 0; 
-   padding: .3em .4em .3em .4em; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size: medium; 
-   color: #f6f0cc; 
-   background-color: #227755; 
-}
-
-////////////////////////////////////////////////
 
 
 

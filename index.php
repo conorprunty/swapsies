@@ -117,36 +117,37 @@
 
 <body>
 
+    
     <div class="container">
         <div class="jumbotron">
-            <h1>SWAPSIES</h1>
+            <img class ="logo img-responsive"  src="SLogoCut.png" align="middle" alt="Swapsies Logo" style="width:200px;height:200px;">
+</div>
+</div>
 
-        </div>
-
-    </div>
-
-
+   
+    
+    
+    
     <div class="row">
-        <div class="col-md-offset-4 col-md-4">
+        <div class=" col-sm-4 col-sm-offset-4">
             <div class="panel-default">
                 <div class="panel-heading text-center"></div>
                 <div class="panel-body">
 
                     <form action="index.php" method="post">
-                        <h4>Login</h4>
                         
                         <div class="input-group"> 
                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             <input name="username" class = "form-control" id="input-default" type="text" placeholder="Username" value="<?php echo $submitted_username; ?>"></div>
                         
+                        </br>
                             
-                            <h4>Password</h4>
     
        <div class="input-group">                 
       <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>                    
                         <input name="password" class = "form-control" id="input-default" type="password" placeholder="Password"></div>
                         <br>
-                        <br>
+                        
                         <p>
                             <input class="btn btn-info btn-block" type="submit" value="Submit">
                         </p>
@@ -154,7 +155,7 @@
                         <a class="btn btn-info btn-block" href="register.php">Register</a>
 
                         <a class="btn btn-info btn-block" href="searchAsGuest.php">View ads as Guest</a> 
-                        </br>
+                        
 
                         <a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
                     </form>
