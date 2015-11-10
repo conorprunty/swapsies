@@ -14,7 +14,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -42,52 +42,76 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="mainmenu.php">Home</a></li>
-        
-        <li><a href="commentsGuest.php">Comments</a></li>
+          <li><a href="insert.php">Create Ad</a></li>
+          <li><a href="commentsGuest.php">Comments</a></li> 
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.php"><span class="glyphicon glyphicon-user"></span>Log In</a></li>
+        <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>
     </div>
   </div>
 </nav>
     
+    
+ <div align='center'>
+        <div class="col-md-offset-4 col-md-4">
+            <div class="panel-default">
+            <div class="panel-heading text-center">
+            <div class="panel-body">   
+   
+                
+                
 <form method="post" action="adverts.php">
-                Search by location:<br>
-            <select name='locationSelect'>
+    
+    <div class="form-group">
+    <label>Search by location</label><br>
+            <select  class="form-control"name='locationSelect'>
                 <option value="" selected>Select All</option>
                 <option value="leinster">Leinster</option>
                 <option value="ulster">Ulster</option>
                 <option value="connacht">Connacht</option>
                 <option value="munster">Munster</option>
-            </select>
-            <br>
-            <p>Search by category:</p>
-            <select name='categorySelect'>
+    </select>
+    </div>
+    
+    <div class="form-group">
+
+        <label>Search by category</label>
+            <select class="form-control" name='categorySelect'>
                 <option value="" selected>Select All</option>
                 <option value="cars">Cars</option>
                 <option value="music">Music</option>
                 <option value="goods">Goods</option>
                 <option value="other">Other</option>
             </select>
+    </div>
+
+    <div class="form-group">
+        <label>Search by value:</label>
+
+            <select class="form-control" name='priceSelect'>
+                <option value="" selected>Select All</option>
+                <option value="0-19">€0-€19.99</option>
+                <option value="20-39">€20-€39.99</option>
+                <option value="40-59">€40-€59.99</option>
+                <option value="60+">€60+</option>
+            </select>
+    </div>
             <br>
-            <p>Search by value:</p>
-                <select name='priceSelect'>
-                    <option value="" selected>Select All</option>
-                    <option value="0-19">$0 - $19.99</option>
-                    <option value="20-39">$20 - $39.99</option>
-                    <option value="40-59">$40 - $59.99</option>
-                    <option value="60+">$60+</option>
-                </select>
-                <br>
-            <button> Submit </button>
+             <button>SEARCH</button>
         </form>
     
     <table>
     </table>
     
-
+                </div>
+                </div>
+            </div>
+     </div>
+    </div>
+    
 
 </body>
 </html>

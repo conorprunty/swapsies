@@ -22,7 +22,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -99,11 +99,11 @@
     <div class="form-group">
         <label>Search by value:</label>
 
-            <select class = "form-control" name='priceSelect'>
+            <select class="form-control" name='priceSelect'>
                 <option value="" selected>Select All</option>
-                <option value="0-19">€0-19.99</option>
-                <option value="20-39">€20-39.99</option>
-                <option value="40-59">€40-59.99</option>
+                <option value="0-19">€0-€19.99</option>
+                <option value="20-39">€20-€39.99</option>
+                <option value="40-59">€40-€59.99</option>
                 <option value="60+">€60+</option>
             </select>
     </div>

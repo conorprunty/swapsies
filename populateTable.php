@@ -32,23 +32,30 @@ if (empty($_SESSION['user'])) {
     }
     
     //selecting individual prices for searching
-    //if ($_POST['priceSelect'] != "") {
-      //  $price = $_POST['priceSelect'];
-    //} else {
-        //selecting all prices for searching
-      //  $price = "SELECT price FROM advert WHERE price = '*'";
-    //}
-
-    
-    $query = " 
+    if ($_POST['priceSelect'] != "") {
+        $price = $_POST['priceSelect'];
+        $query = " 
             SELECT 
-                name, comments, location, category, price, WillAccept
+                comments, location, category, price, WillAccept
+            FROM advert
+            WHERE location='$location'
+            AND category='$category'
+            AND price='$price'
+            ORDER BY entryNo DESC;
+        ";
+    } else {
+        //selecting all prices for searching
+        $query = " 
+            SELECT 
+                comments, location, category, price, WillAccept
             FROM advert
             WHERE location='$location'
             AND category='$category'
             ORDER BY entryNo DESC;
         ";
+    }
     
+
     
     try {
         // run query
