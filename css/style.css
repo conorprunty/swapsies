@@ -18,7 +18,7 @@ table.fulltable {
 	font-size:11px;
 	color:#333333;
 	border-width: 3px;
-	border-color: greenyellow;
+	border-color: black;
 	border-collapse: collapse;
 }
 table.fulltable th {
@@ -29,17 +29,17 @@ table.fulltable th {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: hotpink;
+	border-color: white;
 }
 table.fulltable tr {
-	background-color:white;
+	background-color:#C2D6D6  ;
     color: black;
 }
 table.fulltable td {
 	border-width: 1px;
 	padding: 15px;
 	border-style: solid;
-	border-color: pink;
+	border-color: black;
     height: 50px;
     vertical-align: bottom;
     max-width: 350px;
@@ -47,7 +47,7 @@ table.fulltable td {
     text-align: justify;
 }
 table.fulltable tr:hover { 
-    background-color: lightgoldenrodyellow;
+    background-color: #D7FFFF  ;
 }
 
 .submitb{
@@ -91,6 +91,7 @@ a {
 background-color:transparent!important; 
     padding-top: 100px
 }
+
 
 
 
