@@ -36,7 +36,7 @@ if (empty($_SESSION['user'])) {
         $price = $_POST['priceSelect'];
         $query = " 
             SELECT 
-                comments, location, category, price, WillAccept
+                name, comments, location, category, price, WillAccept
             FROM advert
             WHERE location='$location'
             AND category='$category'
@@ -47,7 +47,7 @@ if (empty($_SESSION['user'])) {
         //selecting all prices for searching
         $query = " 
             SELECT 
-                comments, location, category, price, WillAccept
+                name, comments, location, category, price, WillAccept
             FROM advert
             WHERE location='$location'
             AND category='$category'
