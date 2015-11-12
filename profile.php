@@ -128,9 +128,10 @@ $query = "
   
         </div>
     
-    <div id='deleteads'>  <p> Unwanted ad? Delete it!</p>
+        <div id='deleteads'>  <p> Unwanted ad? </p>
+       <p> Delete it!</p>
     <!-- the onsubmit asks a Yes/No question before proceeding -->
-        Please select ad number:
+        Select ad number:
         <br>
         <br>
         <div align='center'>
