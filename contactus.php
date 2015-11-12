@@ -87,7 +87,7 @@
      <input type="text" class="form-control" name="subject" id="subject">
   </div>
      <label for="comment">Comment</label>
-     <input type="text-area" class="form-control" name="comment" id="comment">
+    <textarea class="form-control" name="comment" maxlength="250" placeholder="Enter comment(s) here..." rows="3" id="comment"></textarea>
                 <br>
                 <button type="submit" value="Submit" class="btn btn-default">Submit</button>
   </div>

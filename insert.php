@@ -78,6 +78,7 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
          
       <label>Description</label>
       <textarea class="form-control" name="comments" rows="3" id="comment"placeholder="Enter your ad here..." maxlength="250"></textarea>
+            <br>
 
             
                 <div class="form-group">
@@ -117,7 +118,6 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
                 </div>
             
 
-            <br>
             <input type="submit" value="Submit">
              
         </fieldset>

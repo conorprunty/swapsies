@@ -78,7 +78,7 @@ table.fulltable tr:hover {
     font-weight: bold;
     color: darkblue;
     text-align: justify;
-    border: dotted;
+    border-style: inset;
 }
 
 
