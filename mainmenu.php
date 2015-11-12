@@ -91,6 +91,16 @@
                      </div>
                   </div>
                </div>
+                
+                <form method="get" action="http://www.google.com/search">
+                    <div>
+                        <input type="text" name="q" size="25" style="color:#808080;"
+                        maxlength="255" placeholder="Google search..."
+                        onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+                        <input type="submit" value="Search" />
+                        <input type="hidden" name="sitesearch" />
+                     </div>
+                </form>
             </div>
          </div>
          <br><br>
