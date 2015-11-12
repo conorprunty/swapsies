@@ -23,7 +23,7 @@
         ?>
             <script type="text/javascript">
             alert("Mail sent to admin!");
-            window.location.href = "populateTable.php";
+            window.location.href = "mainmenu.php";
             </script>
         <?php
   }
@@ -68,17 +68,39 @@
     </div>
   </div>
 </nav>
-<div class="form-group">
+
     
-    
- <form method="post">
-  Your Email: <input name="email" type="text" /><br />
-  Subject: <input name="subject" type="text" /><br />
-  Message:<br />
-  <textarea name="comment" placeholder="Enter your message here..." rows="15" cols="40"></textarea><br />
-  <input type="submit" value="Submit" />
-  </form>
+        
+ <div align='center'>
+        <div class="col-md-offset-4 col-md-4">
+            <div class="panel-default">
+            <div class="panel-heading text-center">
+            <div class="panel-body">   
+   
+   <form method="post"> 
+    <div class="form-group">
+
+        <label for="email">Your Email</label>
+     <input type="email" class="form-control" name="email" id="email">
   </div>
+        <label for="subject">Subject</label>
+     <input type="text" class="form-control" name="subject" id="subject">
+  </div>
+     <label for="comment">Comment</label>
+     <input type="text-area" class="form-control" name="comment" id="comment">
+                <br>
+                <button type="submit" value="Submit" class="btn btn-default">Submit</button>
+  </div>
+  
+  
+  
+                  
+
+                </div>
+            </div>
+        </div>
+    
+     </form>
 
 
 <?php
