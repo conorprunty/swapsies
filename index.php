@@ -111,64 +111,42 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <title>Swapsies</title>
 </head>
 
 <body>
-
-    
+    <br>
+    <br>
     <div class="container">
-        <div class="jumbotron">
             <img class ="logo img-responsive"  src="SLogoCut.png" align="middle" alt="Swapsies Logo" style="width:200px;height:200px;">
-</div>
-</div>
-
-   
-    
-    
-    
+    </div>
     <div class="row">
         <div class=" col-sm-4 col-sm-offset-4">
             <div class="panel-default">
-                <div class="panel-heading text-center"></div>
                 <div class="panel-body">
-
                     <form action="index.php" method="post">
-                        
                         <div class="input-group"> 
                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input name="username" class = "form-control" id="input-default" type="text" placeholder="Username" value="<?php echo $submitted_username; ?>"></div>
-                        
-                        </br>
-                            
-    
-       <div class="input-group">                 
-      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>                    
-                        <input name="password" class = "form-control" id="input-default" type="password" placeholder="Password"></div>
+                             <input name="username" class = "form-control" id="input-default" type="text" placeholder="Username"                                    value="<?php echo $submitted_username; ?>">
+                        </div>
+                        </br>   
+                         <div class="input-group">                 
+                                <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>                    
+                               <input name="password" class = "form-control" id="input-default" type="password"                                                        placeholder="Password">    
+                        </div>
                         <br>
-                        
-                        <p>
-                            <input class="btn btn-info btn-block" type="submit" value="Submit">
-                        </p>
-
+                        <input class="btn btn-info btn-block" type="submit" value="Submit">
                         <a class="btn btn-info btn-block" href="register.php">Register</a>
-
-                        <a class="btn btn-info btn-block" href="searchAsGuest.php">View ads as Guest</a> 
-                        
-
+                        <a class="btn btn-info btn-block" href="searchAsGuest.php">View ads as Guest</a>
+                        <br>
                         <a href="mailto:admin@swapsies.eu?Subject=Password%20Reset" target="_top">Forgot Password</a>
                     </form>
-
-
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

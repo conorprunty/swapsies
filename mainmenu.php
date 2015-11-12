@@ -57,8 +57,8 @@
                   <li><a href="comments.php">Comments</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
-                   <li><a href="contactus.php">Contact Us</a></li>
+                  <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                   <li><a href="contactus.php"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
                   <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                </ul>
             </div>
@@ -117,7 +117,7 @@
                   
                   <div>
                      <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="600"
-                        height="220" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        height="235" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                </div>
             </div>
