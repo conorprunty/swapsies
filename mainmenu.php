@@ -86,10 +86,12 @@
                 </form>
           <br>
          <div>
+             
             <div class="row">
                <div class="col-md-6"> 
-               <div class="col-md-6 col-md-offset-3">
+               <div class="col-md-10 col-md-offset-2">
                   <div>
+                      <br>
                      <div>
                         <a href="insert.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Have something to barter?">CREATE ADS</a>
                      </div>
@@ -106,24 +108,16 @@
                   </div>
                </div>
                    
-                     <div class="btn-group open">
-            <a class="btn btn-success" href="http://www.facebook.com"><i class="fa fa-facebook-official fa-4x"></i></a>
-                         <br>
-            <a class="btn btn-primary" href="http://www.twitter.com"><i class="fa fa-twitter-square fa-4x"></i></a>
-                         <br>
-            <a class="btn btn-danger" href="http://www.linkedin.com"><i class="fa fa-linkedin fa-4x"></i></a>
-         </div>
-                </div>
-             
-              
+                   </div>
+   
             
         
             <div class="col-md-6">
                <div>
                   
                   <div>
-                     <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="300"
-                        height="425" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                     <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="600"
+                        height="220" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                </div>
             </div>
@@ -133,5 +127,16 @@
           
        
       </div>
+          <br>
+          <br>
+                    
+     
+                                                    <div class="btn-group open">
+                         <a class="btn btn-success" href="http://www.facebook.com"><i class="fa fa-facebook-official fa-4x"></i></a>
+                     
+            <a class="btn btn-primary" href="http://www.twitter.com"><i class="fa fa-twitter-square fa-4x"></i></a>
+        
+         <a class="btn btn-danger" href="http://www.linkedin.com"><i class="fa fa-linkedin fa-4x"></i></a>
+         </div>    
    </body>
 </html>

@@ -84,13 +84,18 @@ a {
 }
 
 .panel-default > .panel-body {
- background-color:#FFA300 !important;
+ background-color:sandybrown !important;
+}
+
+.panel-default {
+ background-color: wheat !important;   
 }
 
 .jumbotron {
 background-color:transparent!important; 
     padding-top: 100px
 }
+
 
 
 
