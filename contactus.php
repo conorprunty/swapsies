@@ -68,7 +68,9 @@
     </div>
   </div>
 </nav>
-<div align='center'>
+<div class="form-group">
+    
+    
  <form method="post">
   Your Email: <input name="email" type="text" /><br />
   Subject: <input name="subject" type="text" /><br />

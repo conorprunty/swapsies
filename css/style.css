@@ -72,7 +72,11 @@ table.fulltable tr:hover {
     padding-left: 25px;
     padding-top: 50px;
     float:left;
-    background-color: lightblue;
+    background-color: wheat;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: darkblue;
 }
 
 

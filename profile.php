@@ -68,7 +68,12 @@ $query = "
 
     <title>Profile</title>
 </head>
-
+    <body>
+<script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -115,7 +120,7 @@ $query = "
                                     }
                                     echo "</table>";
                                 } else {
-                                    echo "0 results";
+                                    echo "You have not submitted any ads!";
                                 }
                             
                             ?>
@@ -125,8 +130,12 @@ $query = "
     
     <div id='deleteads'>  <p> Unwanted ad? Delete it!</p>
     <!-- the onsubmit asks a Yes/No question before proceeding -->
-        <form action="deleteOpt.php" method="post" onsubmit="return confirm('Are you sure? This cannot be undone!');">
         Please select ad number:
+        <br>
+        <br>
+        <div align='center'>
+        <form action="deleteOpt.php" method="post" onsubmit="return confirm('Are you sure? This cannot be undone!');">
+        
         <select name="deleteOption">
             <!-- Need this to get the first item -->
 
@@ -142,7 +151,8 @@ $query = "
                             }
                             ?>
         </select><br><br>
-        <input id='deleteBtn' type="image" src="deleteBtn.png" />
+        <input id='deleteBtn' type="image" src="deleteBtn.png" id="input-default" data-toggle="tooltip" data-placement="bottom" title="Click to delete ad!" />
+            </div>
     </form></div>
 
     

@@ -113,6 +113,6 @@ try
 
 
 <?php
-      echo $row["email"];
+     
   }
 ?>

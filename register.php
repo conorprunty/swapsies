@@ -209,7 +209,6 @@
     
 <div class="col-md-offset-4 col-md-4">
 <div class="panel-default">
-<div class="panel-heading text-center"></div>
 <div class="panel-body">
        
 <form action="register.php" method="post">

@@ -76,7 +76,7 @@
     
     <div class="form-group">
     <label>Search by location</label><br>
-            <select  class="form-control"name='locationSelect'>
+            <select class="form-control"name='locationSelect'>
                 <option value="" selected>Select All</option>
                 <option value="leinster">Leinster</option>
                 <option value="ulster">Ulster</option>
