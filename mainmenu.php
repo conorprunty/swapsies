@@ -22,7 +22,7 @@
    <head lang="en">
       <meta charset="UTF-8">
       <meta content='width=device-width, initial-scale=1' name='viewport'>
-      <link href="../css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -33,6 +33,12 @@
       <title>Swapsies</title>
    </head>
    <body>
+       <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+       
       <nav class="navbar navbar-inverse">
          <div class="container-fluid">
             <div class="navbar-header">
@@ -52,6 +58,7 @@
                </ul>
                <ul class="nav navbar-nav navbar-right">
                   <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                   <li><a href="contactus.php">Contact Us</a></li>
                   <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                </ul>
             </div>
@@ -60,27 +67,27 @@
       <div align='center'>
       <br>
       <div class="panel panel-default">
-         <div class="panel-heading">Manage Posts</div>
+         <div class="panel-heading">Manage Posts</div> 
          <div class="panel-body">
             <div class="row">
                <div class="col-md-4">
                   <div class="panel panel-default">
                      <div class="panel-body">
-                        <a href="insert.php" class="btn btn-primary btn-lg btn-block">CREATE ADS</a>
+                        <a href="insert.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Have something to barter?">CREATE ADS</a>
                      </div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="panel panel-default">
                      <div class="panel-body">
-                        <a href="searchTable.php" class="btn btn-primary btn-lg btn-block">SEARCH ADS</a>
+                        <a href="searchTable.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Search existing ads!">SEARCH ADS</a>
                      </div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="panel panel-default">
                      <div class="panel-body">
-                        <a href="profile.php" class="btn btn-primary btn-lg btn-block">PROFILE</a>
+                        <a href="profile.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="View your own ads!">PROFILE</a>
                      </div>
                   </div>
                </div>

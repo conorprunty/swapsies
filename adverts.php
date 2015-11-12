@@ -98,6 +98,7 @@ if ($_POST['locationSelect'] != "") {
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
+          <li><a href="contactus.php">Contact Us</a></li>
         <li><a href="index.php"><span class="glyphicon glyphicon-user"></span>Log In</a></li>
       </ul>
     </div>

@@ -91,6 +91,7 @@ $query = "
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+          <li><a href="contactus.php">Contact Us</a></li>
         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>
     </div>
@@ -143,5 +144,7 @@ $query = "
         </select><br><br>
         <input id='deleteBtn' type="image" src="deleteBtn.png" />
     </form></div>
+
+    
 </body>
 </html>

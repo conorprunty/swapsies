@@ -194,6 +194,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
+          <li><a href="contactus.php">Contact Us</a></li>
         <li><a href="index.php"><span class="glyphicon glyphicon-user"></span>Log In</a></li>
       </ul>
     </div>
@@ -234,12 +235,19 @@
     <div class="btn-group open">
         
 
-  <input class="btn btn-primary" type="submit" class= "form-control" id="input-default" value="Register">
+  <input class="btn btn-primary" type="submit" class= "form-control" id="input-default" data-toggle="tooltip" data-placement="top" title="Click here!" value="Register">
 </form>
 </div>
 </div>
 </div>
 </div>
         
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 </body>
 </html>
