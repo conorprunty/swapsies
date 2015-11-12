@@ -47,7 +47,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="contactus.php">Contact Us</a></li>
+          <li><a href="contactus.php"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>
     </div>
