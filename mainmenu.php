@@ -57,8 +57,8 @@
                   <li><a href="comments.php">Comments</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                   <li><a href="contactus.php"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+                  <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                   <li><a href="contactus.php">Contact Us</a></li>
                   <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                </ul>
             </div>
@@ -66,33 +66,17 @@
       </nav>
       <div align='center'>
       <br>
-      <div class="panel panel-default">
-         <div class="panel-body">
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="panel panel-default">
-                     <div class="panel-body">
-                        <a href="insert.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Have something to barter?">CREATE ADS</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="panel panel-default">
-                     <div class="panel-body">
-                        <a href="searchTable.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Search existing ads!">SEARCH ADS</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="panel panel-default">
-                     <div class="panel-body">
-                        <a href="profile.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="View your own ads!">PROFILE</a>
-                     </div>
-                  </div>
-               </div>
-                
-                <form method="get" action="http://www.google.com/search">
+          
+      <div>
+         <div>
+        <div>
+            <img class ="logo img-responsive"  src="SLogoCutTxt.png" align="middle" alt="Swapsies Logo" style="width:125;height:100px;">
+</div>
+</div>
+          <br>
+           <form method="get" action="http://www.google.com/search">
                     <div>
+                        
                         <input type="text" name="q" size="25" style="color:#808080;"
                         maxlength="255" placeholder="Google search..."
                         onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
@@ -100,22 +84,54 @@
                         <input type="hidden" name="sitesearch" />
                      </div>
                 </form>
-            </div>
+          <br>
+         <div>
+            <div class="row">
+               <div class="col-md-6"> 
+               <div class="col-md-6 col-md-offset-3">
+                  <div>
+                     <div>
+                        <a href="insert.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Have something to barter?">CREATE ADS</a>
+                     </div>
+                      <br>
+                      
+                         <div>
+                        <a href="searchTable.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="Search existing ads!">SEARCH ADS</a>
+                     </div>
+                      <br>
+                            <div>
+                        <a href="profile.php" class="btn btn-primary btn-lg btn-block" id="input-default" data-toggle="tooltip" data-placement="top" title="View your own ads!">PROFILE</a>
+                         
+                     </div>
+                  </div>
+               </div>
+                   
+                     <div class="btn-group open">
+            <a class="btn btn-success" href="http://www.facebook.com"><i class="fa fa-facebook-official fa-4x"></i></a>
+                         <br>
+            <a class="btn btn-primary" href="http://www.twitter.com"><i class="fa fa-twitter-square fa-4x"></i></a>
+                         <br>
+            <a class="btn btn-danger" href="http://www.linkedin.com"><i class="fa fa-linkedin fa-4x"></i></a>
          </div>
-         <br><br>
-               <div class="panel panel-default">
-                  <div class="panel-body">
-                     <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="500"
-                        height="250" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+             
+              
+            
+        
+            <div class="col-md-6">
+               <div>
+                  
+                  <div>
+                     <a class="twitter-timeline" href="https://twitter.com/SwapsiesEire"  width="300"
+                        height="425" data-widget-id="655332187609432064">Tweets by @SwapsiesEire</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                </div>
             </div>
          </div>
-         <div class="btn-group open">
-            <a class="btn btn-success" href="http://www.facebook.com"><i class="fa fa-facebook-official fa-4x"></i></a>
-            <a class="btn btn-primary" href="http://www.twitter.com"><i class="fa fa-twitter-square fa-4x"></i></a>
-            <a class="btn btn-danger" href="http://www.linkedin.com"><i class="fa fa-linkedin fa-4x"></i></a>
-         </div>
+           
+          
+          
+       
       </div>
    </body>
 </html>
