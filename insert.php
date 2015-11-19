@@ -46,7 +46,7 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Swapsies</a>
+      <img class ="logo img-responsive space"  src="swirl.png" align="middle" alt="Swapsies Logo" style="width:50px;height:50px;">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -64,18 +64,24 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
     </div>
   </div>
 </nav>
-
+         <div>
+            <img class ="logo img-responsive"  src="SLogoCutTxt.png" align="middle" alt="Swapsies Logo" style="width:125;height:100px;">
+</div>
     <div align='center'>
+        
+    
+        </div>
         <div class="col-md-offset-4 col-md-4">
             <div class="panel-default">
             <div class="panel-heading text-center">
             <div class="panel-body">
         <form action="submitForm.php" method="post">
-            <label>Name:</label>
+            <label>Username:</label>
             <?php echo (htmlentities($_SESSION['user']['username'])); ?>
             <input type="hidden" name="name" value="<?php echo $name?>"/>
             <br>
-         
+            
+            
       <label>Description</label>
       <textarea class="form-control" name="comments" rows="3" id="comment"placeholder="Enter your ad here..." maxlength="250"></textarea>
             <br>
@@ -124,11 +130,17 @@ $name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
 </form>
         
     </div>
-                </div>
+             </div>
+            
+
             </div>
-            </div>
+        
+       
             </div>
     
+     
+            </div>
     
+        
 </body>
 </html>

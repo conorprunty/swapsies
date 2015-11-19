@@ -5,12 +5,28 @@
    }
 
 
+
 body{
  background-color:wheat !important;
 }
 
 table, td, th {
     border: 1px solid green;
+}
+
+.cmt{
+    
+ background-color: aliceblue !important;
+    
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.space{
+    
+ margin-right:10px;   
 }
 
 table.fulltable {
@@ -119,11 +135,17 @@ h1 {
   text-align: center;
 }
 
+h4 {
+    
+ text-align: center;   
+}
+
 h5 {
     
  color: white !important;
     text-align: center;
 }
+
 
 
 

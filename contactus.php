@@ -57,7 +57,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Swapsies</a>
+      <img class ="logo img-responsive space"  src="swirl.png" align="middle" alt="Swapsies Logo" style="width:50px;height:50px;">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 
@@ -69,7 +69,9 @@
   </div>
 </nav>
 
-    
+     <div>
+            <img class ="logo img-responsive"  src="SLogoCutTxt.png" align="middle" alt="Swapsies Logo" style="width:125;height:100px;">
+</div>
         
  <div align='center'>
         <div class="col-md-offset-4 col-md-4">
@@ -101,7 +103,9 @@
         </div>
     
      </form>
+    
 
+    </body>
 
 <?php
       
