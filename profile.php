@@ -17,7 +17,7 @@
 	$name = htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8');
 	//get all options based on user name
 	$allOpt = "SELECT entryNo FROM advert WHERE name = '$name'";
-	$results = mysql_query($allOpt);
+
 	$stmt1 = $db->prepare($allOpt);
 	$results = $stmt1->execute($query_params);
 	$row1 = $stmt1->fetch();
