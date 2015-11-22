@@ -3,32 +3,20 @@
     margin:auto;
     padding: 0,0,0,0;
    }
-
-
-
 body{
  background-color:wheat !important;
 }
-
 table, td, th {
     border: 1px solid green;
 }
-
 .cmt{
-    
  background-color: aliceblue !important;
-    
-    
     margin-left: 100px;
     margin-right: 100px;
-    
 }
-
 .space{
-    
  margin-right:10px;   
 }
-
 table.fulltable {
 	font-family: verdana,arial,sans-serif;
 	font-size:11px;
@@ -65,21 +53,17 @@ table.fulltable td {
 table.fulltable tr:hover { 
     background-color: #D7FFFF  ;
 }
-
 .submitb{
     height: 30px;
     width: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
 #deleteBtn{
     height:35px;
     width:35px;
 }
-
 #tablediv{
     float: right;
     padding-right: 230px;
@@ -96,57 +80,33 @@ table.fulltable tr:hover {
     text-align: justify;
     border-style: inset;
 }
-
-
 /* These CSS tags relate to the index page currently*/
-
 a {
  color:white !important;   
     align: center;
 }
-
 .panel-default > .panel-body {
  background-color:wheat !important;
 }
-
 .panel-default {
  background-color: wheat !important;   
 }
-
 .jumbotron {
 background-color:transparent!important; 
     padding-top: 100px
 }
-
-
-
-
-
 form {
-    
-    
  font-family:arial;
     color: black;
 }
-
 h1 {
-    
  text-align: center;
   text-align: center;
 }
-
 h4 {
-    
  text-align: center;   
 }
-
 h5 {
-    
  color: white !important;
     text-align: center;
 }
-
-
-
-
-
