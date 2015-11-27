@@ -39,13 +39,13 @@ try
   if (isset($_REQUEST['email']))  {
   
   //Email information
-  $admin_email = $row["email"];
-  $email = "admin@swapsies.eu";
+  //$admin_email = $row["email"];
+  $email = "admin@swapsies.netai.net";
   $subject = $_REQUEST['subject'];
   $comment = $_REQUEST['comment'];
   
   //send email - To, Subject, Message, From (etc)
-  mail("$admin_email", "$subject", $comment, "From:" . $email);
+  mail($row["email"], "$subject", $comment, "From:" . $email);
   
   //JS to let user know the mail has been sent
 

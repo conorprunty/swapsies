@@ -15,7 +15,7 @@
   
   //Email information
   $admin_email = "conorprunty1@gmail.com";
-  $email = "admin@swapsies.eu";
+  $email = "admin@swapsies.netai.net";
   $subject = $_REQUEST['subject'];
   $comment = $_REQUEST['comment'];
   
