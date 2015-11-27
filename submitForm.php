@@ -1,4 +1,8 @@
 <?php
+/*
+*submitForm.php
+*@ author Conor Prunty, Kevin Clarke
+*/
 	$username = "root";
 	$password = "root";
 	$host = "localhost";
@@ -16,8 +20,6 @@
 VALUES ('$_POST[name]', '$_POST[comments]', '$_POST[location]', '$_POST[category]', '$_POST[price]', '$_POST[WillAccept]')";
 	
 	if ($conn->query($sql) === TRUE) {
-		//$message = "Ad successfully submitted!";
-		//echo "<script type='text/javascript'>alert('$message');</script>";
 		header("Location: profile.php");
 		// this statement is needed 
 		die("Redirecting to profile.php");

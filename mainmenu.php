@@ -1,6 +1,8 @@
 <?php
 	/*
 * mainmenu.php *
+*
+*@ author Conor Prunty, Kevin Clarke
 */
 	// connect to DB
 	require("common.php");

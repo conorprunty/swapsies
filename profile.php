@@ -1,6 +1,7 @@
 <?php
 	/*
 * profile.php *
+*@ author Conor Prunty, Kevin Clarke
 */
 	// connect to DB
 	require("common.php");

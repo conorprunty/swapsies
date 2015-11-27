@@ -1,5 +1,9 @@
 <?php
-
+/*
+* contactus.php
+*@ author Conor Prunty, Kevin Clarke
+*
+*/
     // connect to DB
     require("common.php"); 
      
@@ -81,7 +85,6 @@
 			<div class="panel-default">
 				<div class="panel-heading text-center">
 					<div class="panel-body">
-
 						<form method="post">
 							<div class="form-group">
 
@@ -96,18 +99,10 @@
 					<br>
 					<button type="submit" value="Submit" class="btn btn-default">Submit</button>
 				</div>
-
-
-
-
-
 			</div>
 		</div>
 	</div>
-
 	</form>
-
-
 </body>
 
 </html>

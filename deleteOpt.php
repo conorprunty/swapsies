@@ -1,4 +1,8 @@
 <?php
+/*
+*deleteOpt.php
+*@ author Conor Prunty, Kevin Clarke
+*/
 	$username = "root";
 	$password = "root";
 	$host = "localhost";
